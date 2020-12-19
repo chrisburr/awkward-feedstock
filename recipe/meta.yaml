@@ -10,7 +10,7 @@ source:
   sha256: 0111190b3d8fa5f3143b90279a5aad09bbb652b25cbfcf8f48aaf323b450a63c
 
 build:
-  number: 0
+  number: 1
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
   noarch: python
 
@@ -22,6 +22,7 @@ requirements:
     - pytest-runner
   run:
     - python
+    - setuptools
     - numpy >=1.13.1
 
 test:
